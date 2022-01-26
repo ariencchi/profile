@@ -1,0 +1,16 @@
+/* =========== FONT + RESET =============== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@700&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* width e height incluem o tamanho padding e border, mas não incluem margin */
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgb(250,246,236);
+    background: linear-gradient(90deg, rgba(250,246,236,1) 0%, rgba(251,238,208,1) 100%);
+}
