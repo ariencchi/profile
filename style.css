@@ -1,13 +1,4 @@
-/* =========== FONT + RESET =============== */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@700&family=Source+Sans+Pro&display=swap');
-
-* {
-    margin: 0;
-	padding: 0;
-	box-sizing: border-box; /* width e height incluem o tamanho padding e border, mas não incluem margin */
-    text-decoration: none;
-    list-style: none;
-}
 
 body {
     font-size: 100%;
@@ -16,22 +7,7 @@ body {
 }
  
 /* ============ FOOTER ============ */
-/*footer {
-    position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-	padding: 0.5rem 0.5rem;
-	border-top: 1px solid #e4e4e4;
-	background-color: var(--body-color);
-}
-
-.footer p {
-    margin-bottom: 0.5rem;
-}
-
 .social-media a {
     padding: 0.25rem;
     justify-content: space-between;
-}*/
+}
