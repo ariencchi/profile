@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body {
     font-size: 100%;
@@ -6,8 +6,48 @@ body {
     background: linear-gradient(90deg, rgba(250,246,236,1) 0%, rgba(251,238,208,1) 100%);
 }
  
+section {
+	margin-bottom: 5rem;
+}
+
+.progress {
+	margin: 1rem 0;
+	height: 2rem;
+}
+
+.title {
+	margin: 2rem 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #a18cd1;
+}
+
+a:hover {
+	color: #8665d3;
+}
+
+#avatar {
+	width: 85%;
+	margin-top: 2.5rem;
+}
+
+.progress-bar {
+	background-color: rgb(235, 154, 154);
+}
+
 /* ============ FOOTER ============ */
+.footer-div {
+	padding: 0.5rem;
+}
+
+.social-media {
+    padding: 0.25rem;
+	text-align: center;
+}
+
 .social-media a {
     padding: 0.25rem;
-    justify-content: space-between;
 }
