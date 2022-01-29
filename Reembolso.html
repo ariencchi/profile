@@ -1,0 +1,103 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<div class="panel panel-heading text-center">
+	<h1>Relatório de Despesas</h1>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+    	<h3 class="panel-title">Dados do Solicitante</h3>
+    </div>
+	<form name="form" role="form">
+		<div class="row">
+			<div class="form-group col-md-6">
+		        <label for="nomeSolicitante">Solicitante</label>
+		        <input type="text" class="form-control" id="nomeSolicitante" name="nomeSolicitante">
+		    </div>
+			<div class="form-group col-md-6">
+		        <label for="emailSolicitante">E-mail</label>
+		        <input type="email" class="form-control" id="emailSolicitante" name="emailSolicitante">
+		    </div>
+		    <div class="form-group col-md-6">
+		        <label for="empresaSolicitante">Empresa</label>
+		        <input type="text" class="form-control" id="empresaSolicitante" name="empresaSolicitante">
+		    </div>
+		    <div class="form-group col-md-6">
+		        <label for="areaSolicitante">Área</label>
+		        <input type="text" class="form-control" id="areaSolicitante" name="areaSolicitante">
+		    </div>
+		</div>
+	</form>
+</div>
+
+<div class="table">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+	        <h3 class="panel-title">Despesas</h3>
+            <button type="button" class="btn btn-success" id="btnIncluir" name="inputAdicionar" id="inputAdicionar" onclick="addFilho()">+ Incluir</button>
+		</div>
+        <div class="panel-body form-field table-responsive">
+	        <table id="tabelaDespesas" class="table">
+	            <thead>
+	                <tr class="tableHeadRow">
+	                	<th class="tableColumn"></th>
+	                    <th class="tableColumn">Categoria</th>
+	                    <th class="tableColumn">Descrição</th>
+	                    <th class="tableColumn">Vlr. Unitário</th>
+	                    <th class="tableColumn">Qtd.</th>
+	                    <th class="tableColumn">Vlr. Total</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <tr id="index__00">
+	                    <td><button type="button" class="btn btn-danger">X</button></td>
+	                    <td>
+	                    	<select name="opcaoDespesa" class="form-control">
+							    <option selected>Selecione</option>
+							    <option value="1">Hospedagem</option>
+							    <option value="2">Combustível</option>
+							    <option value="3">Pedágio</option>
+							    <option value="4">Alimentação</option>
+							    <option value="5">Outro</option>
+							</select>
+						</td>
+						<td>
+							<input class="form-control" type="text" placeholder="Descrição" aria-label="descrição" name="campoDescricao">
+						</td>
+						<td>
+							<input class="form-control" type="number" placeholder="R$1,00" aria-label="valor unitário" name="campoVlrUn">
+						</td>
+						<td>
+							<input class="form-control" type="number" placeholder="1" aria-label="quantidade" name="campoQtd">
+						</td>
+						<td>
+							<input class="form-control" type="number" placeholder="Total" aria-label="total despesas" name="campoTotal" readonly>
+						</td>
+	                </tr>
+	            </tbody>
+	        </table>
+        </div>
+    </div>
+</div>		
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Ações: </h3>
+		<div class="btn-group">
+		    <button type="button" class="btn btn-warning btn-lg" id="btnLimpar">Limpar</button>
+		    <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
+		    <button type="button" class="btn btn-success btn-lg">Enviar</button>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -17,7 +17,6 @@ $(document).ready(function() {
 
 function insereLinha(){
 var tbody = $("#tbody");
-var contador = 0;
 var linha = "<tr id='linha'>" +
 				"<td>"+
 					"<th scope='row'><button type='button' class='btn btn-danger btnDel'>X</button></th>"+
@@ -46,7 +45,6 @@ var linha = "<tr id='linha'>" +
 				"</td>"+
 			"</tr>"
 			tbody.append(linha);
-			contador++;
 }
 
 function insereTotal(){
@@ -59,16 +57,3 @@ function insereTotal(){
 					"</tr>"
 	tfoot.append(linhaFoot);
 }
-
-// function calcTotLinha(){
-// 	var qtd = parseFloat($("#qtd").value).toFixed(2);
-// 	var vlr = parseFloat($("#qtd").value).toFixed(2);
-// 	var totLinha = ((qtd * vlr).toFixed(2));
-// 	$("#totLinha").val(totLinha);
-// 	function calcSomaTot(){
-// 		for (let i = 0; i < totLinha.length; i++) {
-// 			var somaTot =+ totLinha[i];
-// 		}
-// 		$("#somaTot").val(somaTot);
-// 	};
-// };
